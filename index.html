@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DevQuiz - Programação</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="app">
+    <header>
+      <h1>⚡ DevQuiz</h1>
+      <p>Teste seus conhecimentos em programação!</p>
+    </header>
+
+    <section id="menu">
+      <h2>Pronto para o desafio?</h2>
+      <p>10 perguntas sobre HTML, CSS e JavaScript.</p>
+      <button id="start" class="primary">Começar quiz</button>
+    </section>
+
+    <section id="game" class="hidden">
+      <div class="info">
+        <span id="number"></span>
+        <span id="points">Pontos: 0</span>
+      </div>
+
+      <p id="timer">⏱️ 20 segundos</p>
+      <div class="progress"><div id="bar"></div></div>
+
+      <h2 id="question"></h2>
+      <div id="options"></div>
+
+      <p id="feedback" class="hidden"></p>
+      <button id="next" class="primary hidden">Próxima →</button>
+    </section>
+
+    <section id="result" class="hidden">
+      <h2 id="message"></h2>
+      <p id="final"></p>
+      <button id="restart" class="primary">Jogar novamente ↻</button>
+    </section>
+
+    <footer>Feito para futuros desenvolvedores 💻</footer>
+  </main>
+</body>
+</html>

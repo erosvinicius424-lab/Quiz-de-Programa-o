@@ -1,0 +1,167 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: #0b1020;
+  color: #f1f5f9;
+  font-family: Arial, sans-serif;
+}
+
+.app {
+  width: 100%;
+  max-width: 520px;
+  padding: 28px;
+  background: #151e32;
+  border: 1px solid #293650;
+  border-radius: 20px;
+  box-shadow: 0 20px 60px #0005;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h1 {
+  color: #5ef0b1;
+  font-size: 34px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  margin: 20px 0;
+  line-height: 1.4;
+}
+
+p {
+  color: #bac7dc;
+  line-height: 1.6;
+  margin: 12px 0;
+}
+
+button {
+  cursor: pointer;
+  border: 1px solid #354561;
+  border-radius: 10px;
+  padding: 14px;
+  font-size: 15px;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+button:disabled {
+  cursor: default;
+  opacity: 0.85;
+}
+
+button:hover:not(:disabled) {
+  transform: translateY(-2px);
+}
+
+.primary {
+  width: 100%;
+  background: #5ef0b1;
+  color: #0b1020;
+  border: none;
+  margin-top: 15px;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  color: #5ef0b1;
+  font-size: 14px;
+}
+
+#timer {
+  text-align: center;
+  font-weight: bold;
+}
+
+.progress {
+  height: 7px;
+  background: #293650;
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 15px 0;
+}
+
+#bar {
+  width: 0;
+  height: 100%;
+  background: #5ef0b1;
+  transition: width 0.3s;
+}
+
+#options {
+  display: grid;
+  gap: 10px;
+}
+
+.option {
+  width: 100%;
+  text-align: left;
+  color: white;
+  background: #202c43;
+}
+
+.option:hover:not(:disabled) {
+  border-color: #5ef0b1;
+  background: #29435a;
+}
+
+.option.correct {
+  background: #164432;
+  border-color: #5ef0b1;
+}
+
+.option.wrong {
+  background: #47202d;
+  border-color: #ff647c;
+}
+
+#feedback {
+  padding: 12px;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+
+#feedback.success {
+  background: #164432;
+}
+
+#feedback.error {
+  background: #47202d;
+}
+
+.hidden {
+  display: none !important;
+}
+
+footer {
+  text-align: center;
+  color: #8291aa;
+  font-size: 12px;
+  margin-top: 30px;
+}
+
+@media (max-width: 400px) {
+  .app {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 29px;
+  }
+}
+
